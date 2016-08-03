@@ -136,7 +136,7 @@ function getterSetter(variableParent, variableName, getterFunction, setterFuncti
             }
 
             var url = w.onlinejs.getOnLineCheckURL();
-            xmlhttp.open("HEAD", url, async);
+            xmlhttp.open("HEAD", url, true);
             w.onlinejs.tryToSend(xmlhttp);
 
             if (async === false) {
@@ -192,7 +192,5 @@ function getterSetter(variableParent, variableName, getterFunction, setterFuncti
 
     w.onlinejs.getStatusFromNavigatorOnLine();
     w.onlinejs.logic.init();
-    w.checkOnLine();
-    w.onlinejs.startCheck();
     w.onlinejs.handlerFired = false;
 })(window);
