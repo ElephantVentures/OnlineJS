@@ -192,7 +192,5 @@ function getterSetter(variableParent, variableName, getterFunction, setterFuncti
 
     w.onlinejs.getStatusFromNavigatorOnLine();
     w.onlinejs.logic.init();
-    w.checkOnLine();
-    w.onlinejs.startCheck();
     w.onlinejs.handlerFired = false;
 })(window);
