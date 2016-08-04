@@ -136,7 +136,7 @@ function getterSetter(variableParent, variableName, getterFunction, setterFuncti
             }
 
             var url = w.onlinejs.getOnLineCheckURL();
-            xmlhttp.open("HEAD", url, true);
+            xmlhttp.open("HEAD", url, async);
             w.onlinejs.tryToSend(xmlhttp);
 
             if (async === false) {
